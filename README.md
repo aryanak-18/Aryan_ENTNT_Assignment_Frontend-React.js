@@ -1,70 +1,132 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Aryan_ENTNT_Assignment_Frontend(React.js)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+The Assignment is a modern web application designed to manage and visualize communication schedules, including tracking companies, communication methods, and scheduled activities. This application provides an intuitive UI where users can view, add, and modify communication records in a structured, easy-to-use manner. It leverages **React.js** and **Material-UI** for a seamless and responsive user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Features
 
-### `npm test`
+- **Communication Data Grid**: Displays and manages communication records (companies, methods, schedules).
+- **Sorting & Filtering**: Easily sort and filter communication data for quick access and analysis.
+- **Add/Update/Delete Communication Records**: Users can manage their communication records dynamically.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Backend Integration**: Uses a back-end API for data (also built by myself).
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Functionality
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **DataGrid**:
+  - Displays communication records with fields such as company name, communication method, and scheduled time.
+  - Supports dynamic sorting and filtering of data.
+  
+- **CRUD Operations**:
+  - Add new communication records.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+- **Search and Sorting**:
+  - Search and sort communication records by company, method, or schedule.
+  
+- **Data Display**:
+  - Display mock data for testing purposes, with potential integration for future real data.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend**: 
+  - **React.js** (for building components and UI)
+  - **Material-UI** (for UI components like DataGrid, buttons, and forms)
+  - **React Router** (for page navigation)
+  - **JavaScript (ES6+)**
+  
+- **State Management**: 
+  - React's built-in hooks for managing state (useState, useEffect)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Deployment**: 
+  - **Vercel** or **Netlify** (for hosting the application)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Before you start, make sure you have the following installed:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Node.js](https://nodejs.org/en/download/) (v14 or higher)
+- [npm](https://www.npmjs.com/get-npm) (Node package manager)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Setup Instructions
 
-### Analyzing the Bundle Size
+1. **Clone the repository**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   git clone https://github.com/aryanak-18/Aryan_ENTNT_Assignment_Frontend-React.js-.git
+   ```
 
-### Making a Progressive Web App
+2. **Install dependencies**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   Navigate to the project folder and install dependencies using npm:
 
-### Advanced Configuration
+   ```bash
+   cd project
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **Run the development server**:
 
-### Deployment
+   Once the dependencies are installed, you can start the application locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```bash
+   npm start
+   ```
 
-### `npm run build` fails to minify
+   This will start the development server and open the application in your browser at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **Building for Production**:
+
+   To create an optimized production build:
+
+   ```bash
+   npm run build
+   ```
+
+---
+
+## Deployment
+
+This project can be deployed to platforms like **Vercel** or **Netlify**:
+
+- **Vercel**:
+  - Push the project to a GitHub repository.
+  - Go to [Vercel](https://vercel.com/) and link your GitHub repository to deploy automatically.
+  
+- **Netlify**:
+  - Push the project to a GitHub repository.
+  - Go to [Netlify](https://www.netlify.com/) and link your repository to deploy automatically.
+
+Once deployed, you'll receive a live URL to access the application.
+
+---
+
+## Testing & Validation
+
+- **Test the UI**: Ensure all components are rendered properly on different screen sizes.
+- **Validate sorting/filtering**: Make sure that sorting and filtering work as expected in the DataGrid.
+- **Test CRUD operations**: Ensure the add, update, and delete actions function properly.
+- **Check performance**: Test the application for any performance bottlenecks and resolve them.
+
+---
+
+## Known Limitations
+
+- The current version uses **mock data** for the companies and communication records. Integration with a real back-end system (e.g., REST API) is a potential future enhancement.
+- The DataGrid does not yet support advanced features like pagination or infinite scrolling. These can be added in future versions.
+  
+---
