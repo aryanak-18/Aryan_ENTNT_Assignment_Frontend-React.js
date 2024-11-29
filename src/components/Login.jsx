@@ -17,7 +17,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/login",
+        `${process.env.REACT_APP_BACKEND_URL}/api/login`,
         formData
       );
       localStorage.setItem("token", response.data.token);

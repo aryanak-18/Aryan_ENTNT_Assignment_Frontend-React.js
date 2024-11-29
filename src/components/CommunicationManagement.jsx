@@ -25,7 +25,7 @@ const CommunicationMethodManagement = () => {
   const fetchMethods = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/communications"
+        `${process.env.REACT_APP_BACKEND_URL}/api/communications`
       );
       setMethods(response.data);
     } catch (error) {
@@ -49,12 +49,12 @@ const CommunicationMethodManagement = () => {
     try {
       if (editId) {
         await axios.put(
-          `http://localhost:5000/api/communications/${editId}`,
+          `${process.env.REACT_APP_BACKEND_URL}/api/communications/${editId}`,
           form
         );
         setEditId(null);
       } else {
-        await axios.post("http://localhost:5000/api/communications", form);
+        await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/communications`, form);
       }
       setForm({ name: "", description: "", sequence: "", mandatory: false });
       fetchMethods();
@@ -70,7 +70,7 @@ const CommunicationMethodManagement = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/communications/${id}`);
+      await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/communications/${id}`);
       fetchMethods();
     } catch (error) {
       console.error("Failed to delete communication method", error);

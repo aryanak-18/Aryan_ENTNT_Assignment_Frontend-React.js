@@ -56,7 +56,7 @@ const UserDashboard = () => {
   const fetchCommsFromAPI = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/communications-user"
+        `${process.env.REACT_APP_BACKEND_URL}/api/communications-user`
       );
       const data = response.data;
       return data;
@@ -68,7 +68,7 @@ const UserDashboard = () => {
   const fetchNotificationsFromAPI = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/notifications"
+        `${process.env.REACT_APP_BACKEND_URL}/api/notifications`
       );
       return response.data; // Return notification data (overdue, today, etc.)
     } catch (error) {
