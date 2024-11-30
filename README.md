@@ -115,6 +115,29 @@ Once deployed, you'll receive a live URL to access the application.
 
 ---
 
+## External Dependencies
+
+- **@emotion/react**
+- **@emotion/styled**
+- **@mui/icons-material**
+- **@mui/material**
+- **@mui/x-data-grid**
+- **@testing-library/jest-dom**
+- **@testing-library/react**
+- **@testing-library/user-event**
+- **axios**
+- **dayjs**
+- **react**
+- **react-calendar**
+- **react-dom**
+- **react-router-dom**
+- **react-scripts**
+- **react-tooltip**
+- **web-vitals**
+
+---
+
+
 ## Testing & Validation
 
 - **Test the UI**: Ensure all components are rendered properly on different screen sizes.
